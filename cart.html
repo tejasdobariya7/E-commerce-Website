@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="index.html">
+    <script type="text/javascript" src="main.js"></script>
+
+</head>
+<style>
+  .productcontainer{
+    max-width: 1000px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex ;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+
+  }
+  .proheader{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    max-width: 950px;
+    margin: 0 auto;
+    margin-left: 50px;
+    justify-content: flex-start;
+  }
+  .title{width: 45%;}
+  h5{font-size: 24px;}
+  .price{
+    width: 20%;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    margin-left: 10px;
+
+  }
+  .quntity{
+    width: 20%;
+    display: flex;
+    margin-left: 10px;
+    font-size: 20px;
+    align-items: center;
+  }
+  .total{
+    width: 20%;
+    display: flex;
+    margin-left: 100px;
+    align-items: center;
+    font-size: 20px;
+  }
+  .product{
+    width: 45%;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  .products{    width: 100%;    display: flex;   flex-wrap: wrap; }
+  .products img{   width: 115px;  }
+  .product span{    margin-left: -20%;  }
+    .product .quntity{margin-top: -10%;  }
+  .totalcontainer{
+    display: flex;
+    padding: 10px 0;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 9%;
+    font-size: 30px;
+  }
+  .btotaltitle{width: 20%;}
+  .product .imagess{width: 0px;object-fit: cover;}
+</style>
+<body>
+  <section class="header ani">
+    <nav>
+      <!-- <a href="index.html"><img src="/images/logo.png" alt=""></a> -->
+      <a href="index.html" style="text-decoration: none;">
+        <h1 style="font-size: 35px;"><i class="fa fa-shopping-bag"></i> Shopping</h1>
+      </a>
+      <div class="nav-bar">
+        <ul>
+          <li><a href="./index.html" target="_blank">Home</a> </li>
+          <li><a href="./product.html" target="_blank">Product</a></li>
+          <li><a href="#feature">Feature</a></li>
+          <li><a href="#galary">Galary </a></li>
+          <li><a href="#deals">Deals</a></li>
+          <li><a href="./login form.html " target="_blank">Account</a></li>
+        </ul>
+      </div>
+
+
+      <div class="form-container">
+        <form action="">
+          <input type="search" placeholder="search products" id="search" />
+        </form>       
+      </div>
+      <br>
+      <!-- <img src="/images/user-1.png" alt="" class="hero-img" /> -->
+
+      <div class="hero-content" style="text-align: center; align-items: center;height: 50vh;">
+        <h2><span class="discount"><span class="ty"></span></h2>
+        <h1>Add To Cart</h1>
+        <h3>
+          <span>Page</span>
+        </h3>
+        <br><br>
+
+      </div>
+    </nav>
+  </section>
+
+<section>
+  <div class="productcontainer"data-aos="fade-down" data-aos-duration="1500">
+  <table border="2">
+    <tr>
+      <td>
+    <div class="proheader" >
+      <h5 class="title">Product </h5>
+      <h5 class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price</h5>
+      <h5 class="quntity">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Qty</h5>
+      <h5 class="total">&nbsp;&nbsp;Total</h5>
+    </div>
+    </td></tr>
+    <tr><td> 
+    <div class="products">
+    </div>
+  </td>
+  </tr>
+
+  </table>
+  </div>
+</section>
+
+<a href="form.html"><button type="submit" class="btn"style="text-align: center; margin-left: 50%;">Order Now</button></a>
+   
+<footer id="footer" class="section footer"><br>
+  <div class="boxcontainer">
+    <div class="box">
+      <h3 class="heading1"><span>Why Choose Us ?</span></h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, voluptas culpa? Placeat, eius? Porro alias id qui facere suscipit autem explicabo et distinctio!</p>
+    </div>
+    <div class="box">
+      <h3 class="heading1"><span>Quick Links</span></h3>
+      <a href="#">home</a>
+      <a href="#">product</a>
+      <a href="#">feature</a>
+      <a href="#">galary and deal</a>
+      <a href="#">Account</a>
+    </div>
+    <div class="box">
+      <h3 class="heading1"><span>Location</span></h3>
+      <a href="#">India</a>
+      <a href="#">USA</a>
+      <a href="#">China</a>
+      <a href="#">Japan</a>
+    </div>
+    <div class="box">
+      <h3 class="heading1"><span>Contact</span></h3>
+      <p><i class="fa fa-map-marker-alt"></i> India</p>
+      <p><i class="fa fa-envelope"></i> xyz@gmail.com</p>
+      <p><i class="fa fa-phone"></i> +91 8643242442</p>
+
+    </div>
+  </div>
+   <div class="copywrite">
+    <p>created By <span> Mr.Tejas Dobariya </span>, ALL Right Reserved<i class="fa fa-heart"></i></p>
+  </div> 
+</footer>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+      <script>
+        var typed = new Typed('.ty', {
+      strings: [' ', ' 60% Sale Open','Hurry Up !!'],
+      typeSpeed:100,
+      backSpeed:70,
+      loop:true,
+      });
+      </script>
+
+<script>
+  
+  function displayC() {
+      let cartitem = localStorage.getItem('productcart');
+      cartitem = JSON.parse(cartitem);
+      console.log(cartitem);
+      let cartcost = localStorage.getItem('totalcost');  
+      
+      let productcontainer = document.querySelector('.products');
+      if (cartitem && productcontainer) {
+        console.log("inside this");
+        productcontainer.innerHTML = '';
+        Object.values(cartitem).map(item => {
+          // console.log("hey");
+          productcontainer.innerHTML += `    
+      <div class= "product">
+        <div class="imagess">
+        <img src ="./image/${item.tag}.jpg" >
+        </div>
+         <span>${item.name}</span>
+      </div>
+      <div class="price">&nbsp;&nbsp;&nbsp;$${item.price}</div>
+      <div class="quantity"><br><br><br>${item.incart}</div>
+      <div class="total">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         $${item.incart * item.price},00
+      </div> 
+      `;
+       
+    });
+    productcontainer.innerHTML += `
+
+    <div class="totalcontainer">
+      <h4 class = "btotaltitle"><br><br>Total</h4>
+      <h4 class = "btotal"><br><br>$${cartcost}</h4>
+
+     ` }
+
+ 
+    }
+    displayC();
+</script>
+</body>
+</html>

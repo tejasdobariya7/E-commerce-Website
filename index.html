@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/shop.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="cart.html">
+
+
+
+
+</head>
+
+
+<body>
+
+  <div class="pageloader">
+
+  </div>
+  <section class="header ani" >
+    <nav>
+      <a href="index.html" style="text-decoration: none;">
+        <h1 style="font-size: 35px;" data-aos="fade-right" data-aos-duration="2500">
+          <i class="fa fa-shopping-bag"></i> Shopping</h1>
+      </a>
+      <div class="nav-bar" data-aos="fade-down" data-aos-duration="2500">
+        <ul>
+          <li><a href="./index.html" target="_blank">Home</a> </li>
+          <li><a href="./product.html" target="_blank">Product</a></li>
+          <li><a href="#feature">Feature</a></li>
+          <li><a href="#galary">Galary </a></li>
+          <li><a href="#deals">Deals</a></li>
+          <li><a href="./login form.html " target="_blank">Account</a></li>
+        </ul>
+      </div>
+      <div class="form-container" data-aos="fade-left" data-aos-duration="2500">
+        <form action="">
+         <input type="search" placeholder="search products" id="search" />
+        </form>
+        <div class="icon" style="color: white; font-size: 30px;margin:5px 5px ;vertical-align: center;">
+          <a href="./cart.html" target="_blank"> <i class="fa fa-shopping-cart"><span style="font-size: 20px; ">0</span></i></a>
+        </div>
+      </div>
+      <br>
+      <div class="hero-content" style="text-align: center; align-items: center;">
+        <h2><span class="discount"><span class="ty"></span></h2>
+        <h1>Summer Vibes</h1>
+        <h3><span>mode on</span></h3>
+        <br><br>
+        <a class="btn" style="font-size: 30px;" href="#"> shop now</a>
+      </div>
+    </nav>
+  </section>
+
+  <section class="arrival" id="arrival">
+    <h1 class="heading" data-aos="fade-right" data-aos-duration="1000"><span>New Arrival Products</span> </h1>
+    <div class="boxcontainer" data-aos="fade-down" data-aos-duration="1500">
+      <div class="box">
+        <div class="image">
+          <img src="./image/cm1.jpg" style="background-position: center;" alt="">
+        </div>
+        <div class="info">
+          <h3>Camera</h3>
+          <div class="subinfo">
+            <strong class="price">$600 - <span>$1000</span></strong>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+          </div>
+        </div>
+        <div class="overlay">
+          <a href="#" style="--i:1;" class="fa fa-heart"></a>
+          <a href="#" style="--i:2;" class="fa fa-search"></a>
+          <a href="#" style="--i:3;" class="addcart fa fa-shopping-cart"></a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="./image/mobil6.jpg" style="background-position: center;" alt="">
+        </div>
+        <div class="info">
+          <h3>SmartMobile</h3>
+          <div class="subinfo">
+            <strong class="price">$500 - <span>$1000</span></strong>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+          </div>
+        </div>
+        <div class="overlay">
+          <a href="#" style="--i:1;" class="fa fa-heart"></a>
+          <a href="#" style="--i:2;" class="fa fa-search"></a>
+          <a href="#" style="--i:3;" class="addcart fa fa-shopping-cart"></a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="./image/watch1.jpg" style="background-position: center;" alt="">
+        </div>
+        <div class="info">
+          <h3>Smart watch</h3>
+          <div class="subinfo">
+            <strong class="price">$700 - <span>$1000</span></strong>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="overlay">
+          <a href="#" style="--i:1;" class="fa fa-heart"></a>
+          <a href="#" style="--i:2;" class="fa fa-search"></a>
+          <a href="#" style="--i:3;" class="addcart fa fa-shopping-cart"></a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="./image/laptop2.jpg" style="background-position: center;" alt="">
+        </div>
+        <div class="info">
+          <h3>Laptop</h3>
+          <div class="subinfo">
+            <strong class="price">$900 - <span>$1500</span></strong>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="overlay">
+          <a href="#" style="--i:1;" class="fa fa-heart"></a>
+          <a href="#" style="--i:2;" class="fa fa-search"></a>
+          <a href="#" style="--i:3;" class="addcart fa fa-shopping-cart"></a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="./image/cam4.jpg" style="background-position: center;" alt="">
+        </div>
+        <div class="info">
+          <h3>SmartPhone</h3>
+          <div class="subinfo">
+            <strong class="price">$650 - <span>$1000</span></strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="overlay">
+          <a href="#" style="--i:1;" class="fa fa-heart"></a>
+          <a href="#" style="--i:2;" class="fa fa-search"></a>
+          <a href="#" style="--i:3;" class="addcart fa fa-shopping-cart"></a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="./image/watch3.jpg" style="background-position: center;" alt="">
+        </div>
+        <div class="info">
+          <h3>Smart Watch</h3>
+          <div class="subinfo">
+            <strong class="price">$600 - <span>$1000</span></strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="overlay">
+          <a href="#" style="--i:1;" class="fa fa-heart"></a>
+          <a href="#" style="--i:2;" class="fa fa-search"></a>
+          <a href="#" style="--i:3;" class=" addcart fa fa-shopping-cart"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="l">
+    <h1 class="heading" data-aos="fade-right" data-aos-duration="1000"><span>Launching Product Soon</span></h1><br>
+    <div class="section-center">
+      <div class="gift-img" data-aos="fade-right" data-aos-duration="1500">
+        <img src="./image/mobil4.png" alt="gift" />
+      </div>
+      <div class="gift-info" data-aos="fade-left" data-aos-duration="1500">
+        <h3>New Launched Product</h3>
+        <h4 class="giveaway"></h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reprehenderit molestiae cum libero atque ut
+          voluptate qui consectetur aliquid incidunt voluptatem quos, dolore, non commodi quaerat aliquam
+          eligendi, quisquam totam blanditiis.</p>
+
+        <div class="deadline" style="display: flex;" >
+          <div class="deadline-format" data-aos="flip-right" data-aos-duration="1500">
+            <div>
+              <h4 class="days"></h4>
+              <span>days</span>
+            </div>
+          </div>
+          <div class="deadline-format" data-aos="flip-up" data-aos-duration="1500">
+            <div>
+              <h4 class="hours"></h4>
+              <span>hours</span>
+            </div>
+          </div>
+          <div class="deadline-format" data-aos="flip-right" data-aos-duration="1500">
+            <div>
+              <h4 class="minutes"></h4>
+              <span>mins</span>
+            </div>
+          </div>
+          <div class="deadline-format" data-aos="flip-down" data-aos-duration="1500">
+            <div>
+              <h4 class="seconds"></h4>
+              <span>secs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="feature" id="feature">
+    <h1 class="heading" data-aos="fade-right" data-aos-duration="1000"><span style="background-color:tomato ;"> featured Product</span></h1>
+    <div class="row">
+      <div class="imagebox">
+        <div class="bimage" >
+          <img src="./image/w3.jpg" style="background-position: center;" alt="">
+        </div>
+        <div class="smimage">
+          <img class="imgactive" src="./image/w4.jpg" style="background-position: center;" alt="">
+          <img src="./image/w2.jpg" style="background-position: center;" alt="">
+          <img src="./image/w3.jpg" style="background-position: center;" alt="">
+          <img src="./image/w4.jpg" style="background-position: center;" alt="">
+        </div>
+      </div>
+      <div class="content" >
+
+        <h3>Smart Watch</h3><br>
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          &nbsp; &nbsp; &nbsp; &nbsp; <span>800+ Reviews</span>
+        </div>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisi Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Accusamus ea itaque totam cumque. cing elit. Iure, illum?</p><br>
+        <strong class="price">$100 <span>$500</span></strong>
+        <button type="button" class="btn"> Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Banner -->
+  <section class="section">
+    <h1 class="heading" data-aos="fade-right" data-aos-duration="1500"><span>Brand Collection</span> </h1><br><br><br>
+    <div class="product-banner">
+      <div class="left" data-aos="flip-right" data-aos-duration="1500">
+        <img src="./image/bannerpics.jpg" width="100%" height="100%" alt="" />
+      </div>
+      <div class="right" data-aos="flip-left" data-aos-duration="1500">
+        <div class="content">
+          <h2> <span style="color: tomato; font-size: 50px;" class="t"> </span></h2>
+          <h1>
+            <span>Collect Your</span>
+            <span>Favourite Collection</span>
+          </h1><br>
+          <a class="btn" href="#">shop now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="galary">
+    <!-- title -->
+      <h1 class="heading" data-aos="fade-right" data-aos-duration="1000"><span>Best Product Section</span></h1><br><br>    
+    <!-- filter buttons -->
+    <div class="btn-container" data-aos="flip-down" data-aos-duration="1000"></div>
+    <!-- menu items -->
+    <div class="section-center1" data-aos="fade-down" data-aos-duration="1000">
+      <article class="menu-item"  >
+        <img src="./menu-item.jpeg" alt="menu item" class="photo" />
+        <div class="item-info">
+          <header>
+            <h4 >buttermilk pancakes</h4>
+            <h4 class="price">$15</h4>
+          </header>
+          <p class="item-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+            laboriosam excepturi! Quo, officia.
+          </p>
+        </div>
+      </article>       
+    </div>
+  </section>
+
+  <br><br><br><br>
+  <section class="deals" id="deals">
+    <h1 class="heading" data-aos="fade-down-right" data-aos-duration="1500"><span> Our Speciality</span></h1> <br><br>
+
+    <div class="deal">
+      <div class="iconcontain1" style="display: flex;">
+      
+        <div class="pt-5 pb-5">
+          <div class="container">
+            <div class="section-head col-sm-12" style="text-align: center;"><br><br>
+            <h4 data-aos="fade-down" data-aos-duration="1000"><span>Why Choose</span> Us?</h4>
+            <p data-aos="fade-up" data-aos-duration="1000">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s, when an unknown book.</p>
+          </div>
+            <div class="row" style="display: flex; flex-wrap: wrap;align-items: center; text-align: center;">
+              
+              <div class="col-lg-4 col-sm-6" data-aos="fade-right" data-aos-duration="1000" style="margin-left: 12%; flex-basis: 25%;" >
+                <div class="item"  > <span class="icon feature_box"><i class="fa fa-shipping-fast"></i></span>
+                  <h2>fastest delivery</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6" data-aos="flip-down" data-aos-duration="1000" style="margin-left: 2%; flex-basis: 25%;">
+                <div class="item"> <span class="icon feature_box"><i class="fa fa-box"></i></span>
+                  <h2>Replacement</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6" data-aos="fade-left" data-aos-duration="1000" style=" margin-left: 2%;flex-basis: 25%;">
+                <div class="item"> <span class="icon feature_box"><i class="fa fa-money-check-alt"></i></span>
+                  <h2>Payment Mode</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6"data-aos="fade-right" data-aos-duration="1000"  style="margin-left: 12%; flex-basis: 25%;">
+                <div class="item"> <span class="icon feature_box"><i class="fa fa-database"></i></span>
+                  <h2>Business Growth</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6"data-aos="flip-up" data-aos-duration="1000" style=" margin-left: 2%;flex-basis: 25%;">
+                <div class="item"> <span class="icon feature_box"><i class="fa fa-user-clock"></i></span>
+                  <h2>24 X 7 Support</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6"data-aos="fade-left" data-aos-duration="1000" style=" margin-left: 2%;flex-basis: 25%;">
+                <div class="item"> <span class="icon feature_box"><i class="fa fa-camera"></i></span>
+                  <h2>Lorem, ipsum.</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+<br><br><br><br><br><br>
+
+
+  </section>
+  <section id="t">
+    <h1 class="heading"data-aos="fade-down" data-aos-duration="1000"><span> Our Tastimonails</span></h1> <br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+          <div class="main">
+            <div class="service">
+              <div class="service-logo">
+                <img src="../images/user-1.png">
+              </div>
+              <br>
+              <h4>rtgyhgfcdxsz</h4><br>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sunt quae corrupti quod sequi! Accusantium
+                optio quo provident accusamus libero maxime ipsam dolorum omnis magni! Tenetur ipsam vitae voluptatibus
+                eos.</p><br><br>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <div class="shadow1"></div>
+            <div class="shadow2"></div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+          <div class="main">
+            <div class="service">
+              <div class="service-logo">
+                <img src="../images/user-3.png">
+              </div>
+              <br>
+              <h4>abcdfg</h4><br>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sunt quae corrupti quod sequi! Accusantium
+                optio quo provident accusamus libero maxime ipsam dolorum omnis magni! Tenetur ipsam vitae voluptatibus
+                eos.</p><br><br>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <div class="shadow1"></div>
+            <div class="shadow2"></div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000">
+          <div class="main">
+            <div class="service">
+              <div class="service-logo">
+                <img src="../images/user-2.png">
+              </div>
+              <br>
+              <h4>sdfghjhgtfds</h4><br>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sunt quae corrupti quod sequi! Accusantium
+                optio quo provident accusamus libero maxime ipsam dolorum omnis magni! Tenetur ipsam vitae voluptatibus
+                eos.</p><br><br>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <div class="shadow1"></div>
+            <div class="shadow2"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section><br><br> 
+  
+
+  
+  <section class="news" id="news" data-aos="fade-down" data-aos-duration="1000">
+    <h1 >Newsletter</h1><br>
+    <p>get in touch with us to get most valuable Product </p><br>
+    <form action="">
+      <input type="email" placeholder="enter your email">
+      <a href="./login form.html" target="_blank"><input type="submit" class="btn"></a>
+    </form>
+    <br><br>
+  </section>
+
+  <footer id="footer" class="section footer" data-aos="fade-up" data-aos-duration="1000"><br>
+    <div class="boxcontainer">
+      <div class="box">
+        <h3 class="heading1"><span>Why Choose Us ?</span></h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, voluptas culpa? Placeat, eius? Porro alias id
+          qui facere suscipit autem explicabo et distinctio!</p>
+      </div>
+      <div class="box">
+        <h3 class="heading1"><span>Quick Links</span></h3>
+        <a href="#">home</a>
+        <a href="#">product</a>
+        <a href="#">feature</a>
+        <a href="#">galary and deal</a>
+        <a href="#">Account</a>
+      </div>
+      <div class="box">
+        <h3 class="heading1"><span>Location</span></h3>
+        <a href="#">India</a>
+        <a href="#">USA</a>
+        <a href="#">China</a>
+        <a href="#">Japan</a>
+      </div>
+      <div class="box">
+        <h3 class="heading1"><span>Contact</span></h3>
+        <p><i class="fa fa-map-marker-alt"></i> India</p>
+        <p><i class="fa fa-envelope"></i> xyz@gmail.com</p>
+        <p><i class="fa fa-phone"></i> +91 8643242442</p>
+
+      </div>
+    </div>
+    <div class="copywrite">
+      <p>created By <span> Mr.Tejas Dobariya </span>, ALL Right Reserved<i class="fa fa-heart"></i></p>
+    </div>
+  </footer>
+  <script>
+    document.querySelector('.pageloader').classList.add('.fade-out');
+    setTimeout(function () {
+      document.querySelector('.pageloader').style.display = "none";
+    }, 2000);
+
+    
+</script>
+<script>
+
+    window.addEventListener("load", function () {
+      AOS.init();
+    })
+
+  </script>
+  <script>
+    $('.smimage img').click(function () {
+      $(this).addClass('imgactive').siblings().removeClass('imgactive');
+      let img = $(this).attr('src');
+      $('.bimage img').attr('src', img);
+    });
+
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed('.t', {
+      strings: [' ', ' 20% Sale Open', 'For 2 Days Only ', 'Hurry Up !!'],
+      typeSpeed: 100,
+      backSpeed: 70,
+      loop: true,
+    });
+    var typed = new Typed('.ty', {
+      strings: [' ', ' 50% Sale Open', 'Hurry Up !!'],
+      typeSpeed: 100,
+      backSpeed: 70,
+      loop: true,
+    });
+  </script>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
